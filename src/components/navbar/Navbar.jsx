@@ -10,11 +10,11 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { DarkModeContext } from "../../context/darkModeContext";
-import { AuthContext } from "../../context/authContext";
+// import { AuthContext } from "../../context/authContext";
 
 const Navbar = () => {
    const { toggle, darkMode } = useContext(DarkModeContext);
-   const { currentUser } = useContext(AuthContext);
+   // const { currentUser } = useContext(AuthContext);
 
    return (
       <div className="navbar">
@@ -44,12 +44,16 @@ const Navbar = () => {
             <PersonOutlinedIcon />
             <EmailOutlinedIcon />
             <NotificationsOutlinedIcon />
-            <Link to="/profile/:id" style={{ textDecoration: "none" }}>
-               <div className="user">
-                  <img src={currentUser.profilePic} alt="" />
-                  <span>{currentUser.name}</span>
-               </div>
-            </Link>
+
+            <div className="user">
+               <img
+                  src="https://pm1.narvii.com/6717/853fa0542c4a453c28da102ab8bcad61c416de9c_hq.jpg"
+                  alt=""
+               />
+               <Link to="/profile/:id" style={{ textDecoration: "none" }}>
+                  <span className="user">Eren Yeager</span>
+               </Link>
+            </div>
          </div>
       </div>
    );

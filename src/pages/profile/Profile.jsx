@@ -15,12 +15,12 @@ const Profile = () => {
       <div className="profile">
          <div className="images">
             <img
-               src="https://images.pexels.com/photos/13440765/pexels-photo-13440765.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+               src="https://i.pinimg.com/originals/a7/81/05/a781057de964e97a9c69f160e665a067.png"
                alt=""
                className="cover"
             />
             <img
-               src="https://images.pexels.com/photos/14028501/pexels-photo-14028501.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+               src="https://pm1.narvii.com/6717/853fa0542c4a453c28da102ab8bcad61c416de9c_hq.jpg"
                alt=""
                className="profilePic"
             />
@@ -45,7 +45,7 @@ const Profile = () => {
                   </a>
                </div>
                <div className="center">
-                  <span>Jane Doe</span>
+                  <span>Eren Yeager</span>
                   <div className="info">
                      <div className="item">
                         <PlaceIcon />

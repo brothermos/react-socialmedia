@@ -6,20 +6,20 @@ const Posts = () => {
    const posts = [
       {
          id: 1,
-         name: "John Doe",
+         name: "Anime lover",
          userId: 1,
          profilePic:
-            "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1600",
-         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-         img: "https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStlzN002eWayTogmgJRlY3903YZOGZJ19METnwK715QJqw_cmd6MSKw4ss4sBa6Vyochc&usqp=CAU",
+         desc: "Chainsaw man",
+         img: "https://www.animenewsnetwork.com/thumbnails/crop1200x630gI2/herald/141942/chainsaw-man-ep-5y.png.jpg",
       },
       {
          id: 2,
-         name: "Jane Doe",
+         name: "Mikasa Ackerman",
          userId: 2,
          profilePic:
-            "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1600",
-         desc: "Tenetur iste voluptates dolorem rem commodi voluptate pariatur, voluptatum, laboriosam consequatur enim nostrum cumque! Maiores a nam non adipisci minima modi tempore.",
+            "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Mikasa-Ackermann.Attack-on-Titan.webp",
+         desc: "สวัสดีค่า สบายดีมั้ย",
       },
    ];
 

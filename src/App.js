@@ -3,9 +3,9 @@ import Register from "./pages/register/Register";
 import {
    createBrowserRouter,
    RouterProvider,
-   Route,
+   // Route,
    Outlet,
-   Navigate,
+   // Navigate,
 } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import LeftBar from "./components/leftBar/LeftBar";
@@ -15,9 +15,9 @@ import Profile from "./pages/profile/Profile";
 import "./style.scss";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
-import { AuthContext } from "./context/authContext";
+// import { AuthContext } from "./context/authContext";
 function App() {
-   const { currentUser } = useContext(AuthContext);
+   // const { currentUser } = useContext(AuthContext);
 
    const { darkMode } = useContext(DarkModeContext);
 
@@ -38,21 +38,21 @@ function App() {
    };
 
    // เช็คว่า login ยัง
-   const ProtectedRoute = ({ children }) => {
-      if (!currentUser) {
-         return <Navigate to="/login" />;
-      }
+   // const ProtectedRoute = ({ children }) => {
+   //    if (!currentUser) {
+   //       return <Navigate to="/login" />;
+   //    }
 
-      return children;
-   };
+   //    return children;
+   // };
 
    const router = createBrowserRouter([
       {
          path: "/",
          element: (
-            <ProtectedRoute>
-               <Layout />
-            </ProtectedRoute>
+            // <ProtectedRoute>
+            <Layout />
+            // </ProtectedRoute>
          ),
          children: [
             {
@@ -65,14 +65,14 @@ function App() {
             },
          ],
       },
-      {
-         path: "/login",
-         element: <Login />,
-      },
-      {
-         path: "/register",
-         element: <Register />,
-      },
+      // {
+      //    path: "/login",
+      //    element: <Login />,
+      // },
+      // {
+      //    path: "/register",
+      //    element: <Register />,
+      // },
    ]);
 
    return (
